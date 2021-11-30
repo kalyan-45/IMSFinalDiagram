@@ -1,0 +1,16 @@
+import java.util.*;
+public class Source {
+
+   public static void main(String[] args) {
+        //don't change anything before this line.
+        //initialize your variables here
+        float distance;
+        distance=2.367f;
+        int distanceInMetres;
+        distanceInMetres=2367;
+        
+        //don't change anything after this line.
+        System.out.println("Distance in km="+distance);
+        System.out.println("Distance in metres="+distanceInMetres);
+   }
+}

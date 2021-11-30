@@ -1,0 +1,29 @@
+In my approach, the steps/Algorithm of the given example are as follow-
+1. Initialize the variable name as a number and declare the value number = 23456.
+2. To calculate the value of ones place digit and store value in 'ones' variable using
+ "(number / 1) % 10" formula.
+3. To calculate the value of tens place digit and store value in 'tens' variable using
+ "(number / 10) % 10" formula.
+4. To calculate the value of hundreds place digit and store value in 'hundreds' variable using "(number / 100) % 10" formula.
+5.  To calculate the value of thousands place digit and store value in 'thousands' variable using "(number / 1000) % 10" formula.
+6.  To calculate the value of ten thousands place digit and store value in 'tenThousands' variable using "(number / 1000) % 10" formula.
+7. Print all variables using print.
+
+The code are given when above steps are followed and the code is follow-
+
+public class Main{
+    public static void main(String[] args){
+        int n = 23456;
+        int ones = (n / 1) % 10;
+        int tens = ( n / 10) % 10;
+        int hundreds = (n / 100) % 10;
+        int thousands = (n / 1000) % 10;
+        int tenThousands = (n / 10000) % 10;
+
+        System.out.println(ones);
+        System.out.println(tens);
+        System.out.println(hundreds);
+        System.out.println(thousands);
+        System.out.println(tenThousands);
+    }
+}

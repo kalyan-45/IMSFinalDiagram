@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ForDemo {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int number = 1;
+        int number2 = num * num + 1;
+        int number3 = 0;
+        for(int i = num; i >= 1; i--){
+            for(int j =number3; j>= 1; j--){
+                System.out.print(" ");
+            }
+            for(int k = 1; k<= i; k++){
+                if(k == i){
+                    System.out.print(number++);
+                }
+                else{
+                    System.out.print((number++) + "*");
+                }
+            }
+            for( int l = 1; l<= i; l++){
+                System.out.print("*" + number2++);
+            }
+            System.out.println();
+            number3  +=2;
+            number2 = (number2 - 1)-((i -1 ) * 2);
+        }
+    }
+}
